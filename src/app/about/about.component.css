@@ -1,0 +1,15 @@
+#about {
+  width: 100%;
+  /* height: 90vh; */
+}
+.line {
+  width: 100px;
+  height: 5px;
+  margin-top: 5px;
+  background-color: white;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-left: 10px;
+  }
+}

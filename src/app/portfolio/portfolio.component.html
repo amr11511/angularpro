@@ -1,0 +1,161 @@
+<section>
+  <div class="d-flex justify-content-center align-items-center py-5">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <h1 class="mb-2 mainColor fw-bolder">PORTFOLIO COMPONENT</h1>
+      <div class="d-flex mb-4">
+        <div class="line"></div>
+        <i class="fa-solid fa-star mainColor mx-2"></i>
+        <div class="line"></div>
+      </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="item cursorPointer" (click)="showModel1()">
+              <img
+                src="./assets/imgs/poert1.png"
+                class="w-100 rounded"
+                alt=""
+              />
+              <div
+                class="layer d-flex justify-content-center align-items-center rounded"
+              >
+                <i class="fa-solid fa-plus fa-4x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item cursorPointer" (click)="showModel2()">
+              <img src="./assets/imgs/port2.png" class="w-100 rounded" alt="" />
+              <div
+                class="layer d-flex justify-content-center align-items-center rounded"
+              >
+                <i class="fa-solid fa-plus fa-4x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item cursorPointer" (click)="showModel3()">
+              <img src="./assets/imgs/port3.png" class="w-100 rounded" alt="" />
+              <div
+                class="layer d-flex justify-content-center align-items-center rounded"
+              >
+                <i class="fa-solid fa-plus fa-4x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item cursorPointer" (click)="showModel1()">
+              <img
+                src="./assets/imgs/poert1.png"
+                class="w-100 rounded"
+                alt=""
+              />
+              <div
+                class="layer d-flex justify-content-center align-items-center rounded"
+              >
+                <i class="fa-solid fa-plus fa-4x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item cursorPointer" (click)="showModel2()">
+              <img src="./assets/imgs/port2.png" class="w-100 rounded" alt="" />
+              <div
+                class="layer d-flex justify-content-center align-items-center rounded"
+              >
+                <i class="fa-solid fa-plus fa-4x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item cursorPointer" (click)="showModel3()">
+              <img src="./assets/imgs/port3.png" class="w-100 rounded" alt="" />
+              <div
+                class="layer d-flex justify-content-center align-items-center rounded"
+              >
+                <i class="fa-solid fa-plus fa-4x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    *ngIf="img1Flag"
+    class="model position-fixed d-flex align-items-center"
+    id="model"
+  >
+    <i
+      class="cursorPointer fa-regular fa-circle-xmark colse-model-icon fs-3"
+      (click)="closeModel()"
+    ></i>
+    <i
+      class="cursorPointer fa-solid fa-circle-arrow-left fs-3 move-left"
+      (click)="backimg1()"
+    ></i>
+    <i
+      class="cursorPointer fa-solid fa-circle-arrow-right fs-3 move-right"
+      (click)="forwardimg1()"
+    ></i>
+    <div
+      class="layer-model position-fixed top-0 start-0 end-0 bottom-0 z-n1"
+      (click)="closeModel()"
+    ></div>
+    <div class="modal-card w-40 mx-auto">
+      <img [src]="imgesSrc[0]" class="w-100 rounded-2" alt="port1" />
+    </div>
+  </div>
+
+  <div
+    *ngIf="img2Flag"
+    class="model position-fixed d-flex align-items-center"
+    id="model"
+  >
+    <i
+      class="cursorPointer fa-regular fa-circle-xmark colse-model-icon fs-3"
+      (click)="closeModel()"
+    ></i>
+    <i
+      class="cursorPointer fa-solid fa-circle-arrow-left fs-3 move-left"
+      (click)="backimg2()"
+    ></i>
+    <i
+      class="cursorPointer fa-solid fa-circle-arrow-right fs-3 move-right"
+      (click)="forwardimg2()"
+    ></i>
+    <div
+      class="layer-model position-fixed top-0 start-0 end-0 bottom-0 z-n1"
+      (click)="closeModel()"
+    ></div>
+    <div class="modal-card w-40 mx-auto">
+      <img [src]="imgesSrc[1]" class="w-100 rounded-2" alt="port1" />
+    </div>
+  </div>
+
+  <div
+    *ngIf="img3Flag"
+    class="model position-fixed d-flex align-items-center"
+    id="model"
+  >
+    <i
+      class="cursorPointer fa-regular fa-circle-xmark colse-model-icon fs-3"
+      (click)="closeModel()"
+    ></i>
+    <i
+      class="cursorPointer fa-solid fa-circle-arrow-left fs-3 move-left"
+      (click)="backimg3()"
+    ></i>
+    <i
+      class="cursorPointer fa-solid fa-circle-arrow-right fs-3 move-right"
+      (click)="forwardimg3()"
+    ></i>
+    <div
+      class="layer-model position-fixed top-0 start-0 end-0 bottom-0 z-n1"
+      (click)="closeModel()"
+    ></div>
+    <div class="modal-card w-40 mx-auto">
+      <img [src]="imgesSrc[2]" class="w-100 rounded-2" alt="port1" />
+    </div>
+  </div>
+</section>
